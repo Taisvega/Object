@@ -4,10 +4,10 @@
   margin: 0;
   font-family: sans-serif;
 }
-
+/* 
 :focus {
- /* TODO */
-}
+
+} */
 
 body {
   background-image: linear-gradient(to right, red , yellow);
@@ -61,7 +61,7 @@ ul.has-suggestions {
   overflow: hidden;
 }
 ul li {
-  display: block;
+ 
     color: white;
     text-align: center;
     padding: 14px 16px;
