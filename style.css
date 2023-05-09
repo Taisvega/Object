@@ -3,10 +3,11 @@
   padding: 0;
   margin: 0;
   font-family: sans-serif;
+  
+  
 }
-/* 
-:focus {
 
+/* :focus {
 } */
 
 body {
@@ -15,62 +16,72 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
-  
-}
+  }
 
 input {
- align-items: center;
- position: relative;
+  background-image: linear-gradient(to right, red , yellow); 
+   font-size: 20px;
+  text-align: center;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid rgb(207, 218, 226);
+  box-shadow: 1px 1px 1px 0.5px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .search-container {
+  background-image: linear-gradient(to right, red , yellow);
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 50px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  
+}
+
+.search-container input,
+.search-container .suggestions {
+  width: 100%;
+}
+
+.search-container input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #f2ffc1fc;
+}
+
+.search-container .suggestions {
   padding: 20px;
   background: linear-gradient(90deg,rgba(249, 184, 184, 0.549),rgba(236, 236, 178, 0.549));
   border-radius: 5px;
   display: flex;
   align-items: center;
   gap: 0px;
-  
-}
-.search-container input,
-.search-container .suggestions {
-  color: inherit;
-  border: none;
-  background: transparent;
-  outline: none;
-}
-.search-container input {
-  text-align:left;
-}
-.search-container .suggestions {
-  display: grid;
+
 }
 
 ul {
+  position: relative;
+  padding: 0;
+  margin: 0;
   list-style-type: none;
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  margin-right: 25px;
-  align-items: center;
+  font-size: medium;
+  font-family: sans-serif;
+  text-align: center;
+}
 
-}
-ul.has-suggestions {
-  width: 100%;
-  border-radius: 6px;
-  overflow: hidden;
-}
 ul li {
- 
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-ul li:hover {
-  align-items: center;
+  padding: 14px 16px;
 }
 
-input {
-  align-items: center;
+ul li:hover {
+  background-color: linear-gradient(to right, red , yellow);
 }
