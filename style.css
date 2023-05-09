@@ -1,5 +1,8 @@
 * {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
 
 :focus {
@@ -7,40 +10,67 @@
 }
 
 body {
-  /* TODO */
+  background-image: linear-gradient(to right, red , yellow);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  
 }
 
 input {
- /* TODO */
+ align-items: center;
+ position: relative;
 }
 
 .search-container {
- /* TODO */
+  padding: 20px;
+  background: linear-gradient(90deg,rgba(249, 184, 184, 0.549),rgba(236, 236, 178, 0.549));
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  
 }
 .search-container input,
 .search-container .suggestions {
-  /* TODO */
+  color: inherit;
+  border: none;
+  background: transparent;
+  outline: none;
 }
 .search-container input {
- /* TODO */
+  text-align:left;
 }
 .search-container .suggestions {
-   /* TODO */
+  display: grid;
 }
 
 ul {
-  /* TODO */
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-right: 25px;
+  align-items: center;
+
 }
 ul.has-suggestions {
-  /* TODO */
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
 }
 ul li {
-  /* TODO */
+  display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 ul li:hover {
-  /* TODO */
+  align-items: center;
 }
 
 input {
-   /* TODO */
+  align-items: center;
 }
